@@ -1,0 +1,27 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                
+                <div class="card-header">
+                    <h5 class="card-title">{{postObj.title}}</h5>
+                </div>
+                <div class="card-body">
+                <img [src]="'https://source.unsplash.com/random/?'+getCatg"  class="img-fluid" alt="...">
+            </div>
+            <!-- <hr> -->
+                <div class="card-header color">
+                    <p >{{postObj.body}}</p>
+                </div>
+            
+                  <div class="card-footer d-flex justify-content-between">
+                    <button class="btn btn-outline-primary" [routerLink]="['edit']" >Edit</button>
+                    <button class="btn btn-outline-danger"
+                    (click)="postDelete()"
+                    >Delete</button>
+                  </div>
+              </div>
+        </div>
+    </div>
+</div>
